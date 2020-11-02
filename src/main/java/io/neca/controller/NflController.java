@@ -26,7 +26,7 @@ public class NflController {
 	@GetMapping("/players")
 	public ResponseEntity<Object> getAll() {
 		List<Player> players = service.getPlayers();
-		ServiceResponse<List<Player>> response = new ServiceResponse<>("successfully handled", players);
+		ServiceResponse<List<Player>> response = new ServiceResponse<>("success", players);
 		return new ResponseEntity<Object>(response, HttpStatus.OK);
 	}
 

@@ -4,11 +4,15 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity @Data // @Getter , @Setter , @ToString , @EqualsAndHashCode and @RequiredArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class Player {
 
 	@Id
